@@ -1,0 +1,21 @@
+body{font-family: 'Josefin Slab', serif;, cursive; text-align: center;}
+h1 {color:black; font-family: 'Lobster Two', cursive; font-size: 50px; text-align: center;}
+#submitbutton{font-family: sans-serif;
+background-color: gray;
+border: none;
+color: white;
+padding: 10px 27px;
+text-align: center;
+font-size: 16px;
+}
+
+#submitbutton:hover
+{
+font-family: sans-serif;
+background-color: #c1c9cc;
+border: none;
+color: white;
+padding: 10px 27px;
+text-align: center;
+font-size: 16px;
+}}

@@ -1,0 +1,71 @@
+
+body{background-image: url("IMG_13823715061468.png");background-size:cover}
+form{text-align: center}
+#gif{ display: block; margin-left: auto; margin-right: auto;}
+h1 {color:white; font-family: 'Lobster Two', cursive; font-size: 80px; text-align: center;}
+
+#buttonmember
+    {
+    font-family: sans-serif;
+    background-color: gray;
+    border: none;
+    color: white;
+    padding: 10px 27px;
+    text-align: center;
+    font-size: 16px;
+    }
+
+#buttonmember:hover
+  {
+  font-family: sans-serif;
+  background-color: #c1c9cc;
+  border: none;
+  color: white;
+  padding: 10px 27px;
+  text-align: center;
+  font-size: 16px;
+  }
+
+#buttonhelp
+    {
+    font-family: sans-serif;
+    background-color: gray;
+    border: none;
+    color: white;
+    padding: 10px 27px;
+    text-align: center;
+    font-size: 16px;
+    }
+
+#buttonhelp:hover
+  {
+  font-family: sans-serif;
+  background-color: #c1c9cc;
+  border: none;
+  color: white;
+  padding: 10px 27px;
+  text-align: center;
+  font-size: 16px;
+  }
+
+  #buttonabout
+      {
+      font-family: sans-serif;
+      background-color: gray;
+      border: none;
+      color: white;
+      padding: 10px 27px;
+      text-align: center;
+      font-size: 16px;
+      }
+
+  #buttonabout:hover
+    {
+    font-family: sans-serif;
+    background-color: #c1c9cc;
+    border: none;
+    color: white;
+    padding: 10px 27px;
+    text-align: center;
+    font-size: 16px;
+    }

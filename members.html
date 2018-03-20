@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+  <link rel="stylesheet" type="text/css" href="members.css" >
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <h1>Our Helpers 👩🏽‍💻‍👩🏿‍💻</h1>
+</head>
+<div class"container">
+<div align=center class="toolbar mb2 mt2">
+  <button class="btn fil-cat" href="" data-rel="all">All</button>
+  <button class="btn fil-cat" data-rel="india">India</button>
+  <button class="btn fil-cat" data-rel="jamaica">Jamaica</button>
+
+</div>
+<br>
+
+<!--Back Button-->
+<div style="text-align: center">
+<form name="buttonback" action="index.html">
+    <input id="buttonback" type="submit" value="Homepage" />
+</form>
+</div>
+<br>
+<!--MEMBERS-->
+<div class="row">
+    <div class="col-md-12">
+        <div style="text-align: center" id="portfolio">
+
+        <form class="buttonkad" action="kadejha.html">
+        <div class="buttonkad jamaica all">
+        <input id="kad" type="image" src="kad.png" width="200px" height="200px"/>
+        <input id="buttonkad" type="image" src="5df6e646-c177-45ad-9397-45e5ee8dafe0.png" width="200px" height="200px"/>
+        </div>
+        </form>
+
+        <form class=buttonhenna action="henna.html">
+        <div class="buttonhenna all india">
+        <input id="henna" type="image" src="henna.png" width="200px" height="200px"/>
+        <input id="buttonhenna" type="image" src="Screen Shot 2018-02-19 at 20.03.46.png" width="200px" height="200px"/>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+<!--
+<div style="text-align: center" id="portfolio">
+
+<form class="buttonkad" action="/Users/hennabatra/Desktop/PROJECT CFG/kadejha.html">
+<div class="buttonkad jamaica all">
+<input id="kad" type="image" src="/Users/hennabatra/Desktop/PROJECT CFG/kad.png" width="200px" height="200px"/>
+<input id="buttonkad" type="image" src="/Users/hennabatra/Desktop/PROJECT CFG/5df6e646-c177-45ad-9397-45e5ee8dafe0.png" width="200px" height="200px"/>
+</div>
+</form>
+
+&nbsp
+
+
+<form class=buttonhenna action="/Users/hennabatra/Desktop/PROJECT CFG/henna.html">
+<div class="buttonhenna all india">
+<input id="henna" type="image" src="/Users/hennabatra/Desktop/PROJECT CFG/henna.png" width="200px" height="200px"/>
+<input id="buttonhenna" type="image" src="/Users/hennabatra/Desktop/PROJECT CFG/Screen Shot 2018-02-19 at 20.03.46.png" width="200px" height="200px"/>
+</div>
+</form>
+-->
+</div>
+
+<script>
+$(function() {
+		var selectedClass = "";
+		$(".fil-cat").click(function(){
+		selectedClass = $(this).attr("data-rel");
+     $("#portfolio").fadeTo(100, 0.1);
+		$("#portfolio div").not("."+selectedClass).fadeOut().removeClass('scale-anm');
+    setTimeout(function() {
+      $("."+selectedClass).fadeIn().addClass('scale-anm');
+      $("#portfolio").fadeTo(300, 1);
+    }, 300);
+
+	});
+});
+</script>
+
+<body>
+</body>
+</html>

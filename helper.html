@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="helper.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script>
+  function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        swal('Please enter your Name'," ","error");
+        return false;
+    }
+    else var y = document.forms["myForm"]["email"].value;
+    if (y == "") {
+        swal('Please enter your email'," ","error");
+        return false;
+    }
+    else var z = document.forms["myForm"]["appform"].value;
+    if (z.length == 0) {
+        swal('Please enter your application'," ","error");
+        return false;
+    }
+    else if (z.length < 280) {
+        swal('Your application is too short'," ","error");
+        return false;
+    }
+  }
+  </script>
+</head>
+<body>
+  <form name="myForm" action="https://formspree.io/hennabatra@gmail.com"
+  onsubmit="return validateForm()" method="post">
+    <h1>Become a helper 💫</h1>
+    Name: <input type="text" name="fname">
+    <br>
+    Email: <input type="text" name="email"> <br>
+    <p> Write as to why you are wanting to apply to this role: </p>
+    <textarea name="appform" rows="5" cols="100"></textarea>  <br>
+    <p> Please upload a profile picture: </p>
+    <input type="file" name"upload"> <br><br>
+    <input id="submitbutton" type="submit" value="Submit">
+  </form>
+</body>
+</html>

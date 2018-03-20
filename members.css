@@ -1,0 +1,57 @@
+#buttonback
+    {
+    font-family: sans-serif;
+    background-color: gray;
+    border: none;
+    color: white;
+    padding: 10px 27px;
+    text-align: center;
+    font-size: 16px;
+    }
+
+#buttonback:hover
+  {
+  font-family: sans-serif;
+  background-color: #c1c9cc;
+  border: none;
+  color: white;
+  padding: 10px 27px;
+  text-align: center;
+  font-size: 16px;
+  }
+
+
+h1{color:black; font-family: 'Lobster Two', cursive; font-size: 50px; text-align: center;}
+
+.buttonkad{overflow: hidden; width: 200px; height: 200px; position: relative; border-radius: 50%;}
+#buttonkad,#kad{position:absolute;}
+#buttonkad
+    {
+    transition: all 1s ease-in;
+    }
+#buttonkad:hover
+  {
+  transform: scale(1.4);
+  transition: all 1s ease-in;
+  filter: blur(7px);
+  opacity: 0
+  }
+
+
+.buttonhenna{overflow: hidden; width: 200px; height: 200px; position: relative; border-radius: 50%; }
+#buttonhenna,#henna{position:absolute;}
+#buttonhenna
+    {
+    transition: all 1s ease-in;
+    }
+#buttonhenna:hover
+    {
+    transform: scale(1.4);
+    transition: all 1s ease-in;
+    filter: blur(7px);
+    opacity: 0
+    }
+
+.buttonhenna,.buttonkad {
+    display: inline-grid;
+    }
